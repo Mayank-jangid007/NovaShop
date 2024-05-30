@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300;400&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="LogIn.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font-family: Josefin Sans;
+    }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+        appearance: none;
+        -webkit-appearance: none;
+        margin: 0; /* Optional: Adjust the margin if needed */
+    }   
+</style>
+<body class="mainCon bg-blue-200 w-full h-screen flex items-center justify-center">
+    <div class="container w-[30%] h-[65%] bg-blue-100 rounded-[20px] p-5 relative">
+        <div class="flex flex-col items-center">
+            <h1 class="logo absolute text-[40px] transition-all duration-400 border-b-blue-400  border-b-[5px]">Log-In</h1>
+            <h1 class="Sign-logo  absolute right-0  text-[0px] transition-all duration-400 border-b-blue-400  border-b-[5px]">Sign-Up</h1>
+        </div>
+        <form action="" class="mt-[90px] flex flex-col items-center relative">
+            <div class="Name-section hidden w-full h-auto transition-max-height duration-500 p-2 bg-white rounded-[20px] mb-3">
+                <label for="input" class="name">Name:</label>
+                <p class="namePara absolute right-2 top-0 text-red-600"></p>
+                <input class="nameInput w-full mt-1 p-2 outline-none" onkeyup="nameCheck()" type="text" placeholder="Name">
+            </div>
+            <div class="email-section  w-full h-auto p-2 bg-white rounded-[20px] mb-3 relative">
+                <label for="input" class="Emial">Email Address:</label>
+                <p class="emial absolute right-2 top-0 text-red-600"></p>
+                <input class="input w-full mt-1 p-2 outline-none" onkeyup="emialInput()" type="text" placeholder="UserName@gmail">
+            </div>
+            <div class="pass-section w-full h-auto p-2 bg-white rounded-[20px] mb-3 relative">
+                <label for="input">Password:</label>
+                <p class="password absolute right-2 top-0 text-red-600"></p>
+                    <input class="input2 w-[90%] mt-1 p-2 outline-none" type="password" onkeyup="pass()" placeholder="Password">
+                    <i class="showpass fa-solid fa-eye "></i>
+                    <div class="hidd w-[2px] h-[20px] absolute bottom-[18px] right-[27px] rotate-45 bg-black"></div>
+            </div>
+            <div class="num-section hidden w-full h-auto p-2 bg-white rounded-[20px]  relative">
+                <label for="input">Number:</label>
+                <p class="NumberPara password absolute right-2 top-0 text-red-600"></p>
+                <input class="NumberInput w-[90%] mt-1 p-2 outline-none" type="number" onkeyup="Numeber()"" placeholder="Number">
+            </div>
+        </form>
+        <Button class="submit w-[90%] h-[40px] bg-blue-800 ml-4 rounded-[20px] hover:text-white mt-7" type="submit">Submit</Button>
+        <p class="SignUp absolute left-4 bottom-10 hover:text-white">Sign-up</p>
+        <p class="absolute right-4 bottom-10 hover:text-white">Forgot password?</p>
+    </div>
+</body>
+</html>
+<!-- absolute bottom-7 right-[55px] -->
