@@ -69,12 +69,12 @@ function pass(){
     }
 
     if(char && !number && !special){
-        password.innerHTML = "*Week Password";
+        password.innerHTML = "*weak Password";
         password.style.color = "red";
     } 
     if(char && number && !special){
         password.innerHTML = "*Medium Password";
-        password.style.color = "yellow";
+        password.style.color = "orange";
     }else if(char && number && special){
         password.innerHTML = "*Strong Password";
         password.style.color = "Green";
