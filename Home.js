@@ -251,7 +251,7 @@ function searchItems(e){
   })
   search.addEventListener('blur', function(e){
     overlay.style.display = "none";
-    // history.style.display = "none";
+    history.style.display = "none";
   })
   search.addEventListener('input', function(e){
     let filterArray = product.filter((obj) => obj.name.toLowerCase().startsWith(search.value));   // filter kya kr rha hai ki ye dekh rha hai jo obj ka name aya hai wo lstart ho rha hai jo input ki hai value agar true hai to array me daldo kyuki filer array return krta hai agar true hota hai to false me wo array me nhi dalta jo false huwa hai
