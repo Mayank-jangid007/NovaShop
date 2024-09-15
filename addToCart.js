@@ -2,7 +2,7 @@ let cartSection = document.querySelector(".cartSection");
 function local() {
   let add = "";
   let getToLocal = window.localStorage.getItem("cartDetails");
-  getToLocal = JSON.parse(getToLocal); // agar getToLocal me data aya hai to usko json me convert krdo mtlb normal text me
+  getToLocal = JSON.parse(getToLocal);
   console.log(getToLocal);
   if(getToLocal){
       getToLocal.filter(function (e, index) {
